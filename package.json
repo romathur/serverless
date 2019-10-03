@@ -67,11 +67,21 @@
     "prettier-check-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
     "prettify": "prettier --write --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
     "prettify-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier --write",
-    "pkg": "pkg . --out-path dist"
+    "pkg": "node ./scripts/pkg.js"
   },
   "eslintConfig": {
     "extends": "@serverless/eslint-config/node",
-    "root": true
+    "root": true,
+    "overrides": [
+      {
+        "files": [
+          "scripts/pkg.js"
+        ],
+        "parserOptions": {
+          "ecmaVersion": 2017
+        }
+      }
+    ]
   },
   "eslintIgnore": [
     "lib/plugins/create/templates/**"
