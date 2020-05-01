@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - '@serverless/enterprise-plugin > lodash':
+        patched: '2020-05-01T08:37:42.976Z'
+    - archiver > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - inquirer > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - json-refs > graphlib > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - '@serverless/cli > prettyoutput > lodash':
+        patched: '2020-05-01T08:37:42.976Z'
+    - '@serverless/enterprise-plugin > @serverless/event-mocks > lodash':
+        patched: '2020-05-01T08:37:42.976Z'
+    - archiver > archiver-utils > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - archiver > async > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - archiver > zip-stream > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - tabtab > inquirer > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - '@serverless/cli > @serverless/template > graphlib > lodash':
+        patched: '2020-05-01T08:37:42.976Z'
+    - archiver > zip-stream > archiver-utils > lodash:
+        patched: '2020-05-01T08:37:42.976Z'
+    - '@serverless/enterprise-plugin > dependency-tree > precinct > detective-typescript > @typescript-eslint/typescript-estree > lodash':
+        patched: '2020-05-01T08:37:42.976Z'
